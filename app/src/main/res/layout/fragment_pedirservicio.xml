@@ -2,156 +2,322 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_pedirServ"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#00FFFFFF"
-    tools:context="body.PedirservicioFragment">
+    android:id="@+id/contenedor_solicitud2"
+    android:layout_width="355dp"
+    android:layout_height="370dp"
+    android:layout_gravity="bottom|center"
+    android:layout_marginBottom="30dp"
+    android:background="@drawable/shapewhite">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/nav_pedirServicio"
-        android:layout_width="355dp"
-        android:layout_height="622dp"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/shapewhite"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/constraintLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/shapebotontext"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="77dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_menu_gallery" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/textView40"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="30dp"
-            android:text="Destino"
-            android:textColor="@color/textmenu"
-            android:textSize="20dp"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="15dp"
+            android:text="USUARIO"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView17"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/etxtIngresaDestino"
-            android:layout_width="265dp"
-            android:layout_height="62dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/shapebotontext2"
-            android:ems="10"
-            android:gravity="center_vertical"
-            android:hint="Casa"
-            android:inputType="textPersonName"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:textSize="30dp"
-            app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
-            app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-        <EditText
-            android:id="@+id/etxtIngresaTrabajo"
-            android:layout_width="265dp"
-            android:layout_height="62dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/shapebotontext2"
-            android:ems="10"
-            android:gravity="center_vertical"
-            android:hint="Carpintero"
-            android:inputType="textPersonName"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:textSize="30dp"
-            app:layout_constraintStart_toEndOf="@+id/constraintLayout3"
-            app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
-        <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/textView41"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
-            android:text="Trabajo"
-            android:textColor="@color/textmenu"
-            android:textSize="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etxtIngresaDestino" />
-
-
-        <TextView
-            android:id="@+id/textView35"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="20dp"
-            android:text="Trabajos recomendados"
-            android:textColor="@color/textmenu"
+            android:text="7771234567"
+            android:textColor="@color/black"
             android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etxtIngresaTrabajo" />
-
-        <ListView
-            android:layout_width="295dp"
-            android:layout_height="230dp"
-            android:layout_marginStart="30dp"
-            android:background="@drawable/shapebotontext"
-            app:layout_constraintBottom_toTopOf="@+id/btnConfirmarpedirservicio"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView35" />
-
-        <Button
-            android:id="@+id/btnConfirmarpedirservicio"
-            android:layout_width="322dp"
-            android:layout_height="48dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/shapeboton"
-            android:text="Confirmar"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="25sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout2"
-            android:layout_width="30dp"
-            android:layout_height="62dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/shapebotontext3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView15">
-
-            <ImageView
-                android:id="@+id/imageView13"
-                android:layout_width="20dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:src="@drawable/ic_btn_foreground"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout3"
-            android:layout_width="30dp"
-            android:layout_height="62dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/shapebotontext3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView16">
-
-            <ImageView
-                android:id="@+id/imageView14"
-                android:layout_width="20dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:src="@drawable/ic_btntrabajo_foreground"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintStart_toEndOf="@+id/imageView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView40" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shapebotontext3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView42">
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_btn_foreground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shapebotontext3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_btntrabajo_foreground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="293dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shapebotontext2"
+        android:text="CARPINTERO"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="293dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shapebotontext2"
+        android:text="Casa del usuario"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    <Button
+        android:id="@+id/btnAceptarServicio"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shapeboton"
+        android:text="Aceptar servicio"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCancelarServicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancelarServicio"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shapeboton"
+        android:text="Cancelar servicio"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/nav_pedirServ"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="#00FFFFFF"-->
+<!--    tools:context="body.PedirservicioFragment">-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/nav_pedirServicio"-->
+<!--        android:layout_width="355dp"-->
+<!--        android:layout_height="622dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:background="@drawable/shapewhite"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.494"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView15"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:text="Destino"-->
+<!--            android:textColor="@color/textmenu"-->
+<!--            android:textSize="20dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/etxtIngresaDestino"-->
+<!--            android:layout_width="265dp"-->
+<!--            android:layout_height="62dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:background="@drawable/shapebotontext2"-->
+<!--            android:ems="10"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:hint="Casa"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textColorHint="@color/black"-->
+<!--            android:textSize="30dp"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/constraintLayout2"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView15" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/etxtIngresaTrabajo"-->
+<!--            android:layout_width="265dp"-->
+<!--            android:layout_height="62dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:background="@drawable/shapebotontext2"-->
+<!--            android:ems="10"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:hint="Carpintero"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textColorHint="@color/black"-->
+<!--            android:textSize="30dp"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/constraintLayout3"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView16" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView16"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="Trabajo"-->
+<!--            android:textColor="@color/textmenu"-->
+<!--            android:textSize="20dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/etxtIngresaDestino" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView35"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="Trabajos recomendados"-->
+<!--            android:textColor="@color/textmenu"-->
+<!--            android:textSize="20sp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/etxtIngresaTrabajo" />-->
+
+<!--        <ListView-->
+<!--            android:layout_width="295dp"-->
+<!--            android:layout_height="230dp"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:background="@drawable/shapebotontext"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/btnConfirmarpedirservicio"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView35" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnConfirmarpedirservicio"-->
+<!--            android:layout_width="322dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:background="@drawable/shapeboton"-->
+<!--            android:text="Confirmar"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="25sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/constraintLayout2"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="62dp"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:background="@drawable/shapebotontext3"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView15">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView13"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:src="@drawable/ic_btn_foreground"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/constraintLayout3"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="62dp"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:background="@drawable/shapebotontext3"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView16">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView14"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:src="@drawable/ic_btntrabajo_foreground"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

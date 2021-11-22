@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="105dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="45dp"
         android:text="Termina tu registro"
         android:textAlignment="center"
@@ -33,17 +33,44 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_menu_gallery" />
+
+        <TextView
+            android:id="@+id/btneditarfoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Agregar mi foto de perfil   >"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="20dp"
         android:text="Ingresa tu telefono"
         android:textColor="@color/black"
         android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 
     <EditText
         android:id="@+id/etxtIngresaTelefono"
@@ -140,7 +167,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="150dp"
         android:layout_marginEnd="150dp"
-        android:layout_marginBottom="45dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/shapeboton"
         android:text="Siguiente"
         android:textAllCaps="false"

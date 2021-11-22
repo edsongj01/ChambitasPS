@@ -35,33 +35,30 @@
 
         <activity
             android:name=".MenuActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_menu"
-            android:theme="@style/Theme.ChambitasPS.NoActionBar" />
-        <!--            <intent-filter>-->
-        <!--                <action android:name="android.intent.action.MAIN" />-->
+            android:theme="@style/Theme.ChambitasPS.NoActionBar" >
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
 
-        <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-        <!--            </intent-filter>-->
-        <!--        </activity>-->
+                        <category android:name="android.intent.category.LAUNCHER" />
+                    </intent-filter>
+                </activity>
 
         <activity
             android:name=".splash.SplashActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"/>
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
 
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".login.RegistroActivity"
-            android:exported="false" />
-        <activity
-            android:name=".login.ContraseniaUsuarioActivity"
             android:exported="false" />
         <activity
             android:name=".login.IngresaUsuarioActivity"

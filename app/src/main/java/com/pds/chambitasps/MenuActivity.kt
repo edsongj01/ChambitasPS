@@ -39,7 +39,7 @@ class MenuActivity : AppCompatActivity(), OnMapReadyCallback {
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_serviciossolicitados, R.id.nav_configuracion, R.id.nav_acercade, R.id.cerrarsesionFragment
+                R.id.nav_home, R.id.nav_serviciosrealizados, R.id.nav_configuracion, R.id.nav_acercade, R.id.cerrarsesionFragment
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

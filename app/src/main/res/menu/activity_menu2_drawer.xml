@@ -9,7 +9,7 @@
             android:icon="@drawable/ic_inicio_foreground"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_serviciossolicitados"
+            android:id="@+id/nav_serviciosrealizados"
             android:icon="@drawable/ic_servsoli_foreground"
             android:title="@string/menu_gallery" />
         <item

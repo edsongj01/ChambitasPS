@@ -18,14 +18,14 @@ class PedirservicioFragment : Fragment() {
         // Inflate the layout for this fragment
         val root = inflater.inflate(R.layout.fragment_pedirservicio, container, false)
 
-        val nav = Navigation.createNavigateOnClickListener(R.id.action_pedirservicioFragment_to_elegirdestinoFragment)
-        root.etxtIngresaDestino.setOnClickListener {
+        val nav = Navigation.createNavigateOnClickListener(R.id.action_pedirservicioFragment_to_aceptacionservicioFragment)
+        root.btnAceptarServicio.setOnClickListener {
             nav.onClick(it)
         }
 
-        val nav2 = Navigation.createNavigateOnClickListener(R.id.action_pedirservicioFragment_to_confirmarservicioFragment)
-        root.btnConfirmarpedirservicio.setOnClickListener {
-            nav2.onClick(it)
+        val cancelar = Navigation.createNavigateOnClickListener(R.id.action_pedirservicioFragment_to_nav_home)
+        root.btnCancelarServicio.setOnClickListener {
+            cancelar.onClick(it)
         }
 
         return root

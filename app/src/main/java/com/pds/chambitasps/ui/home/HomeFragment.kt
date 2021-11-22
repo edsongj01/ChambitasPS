@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -13,6 +14,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.pds.chambitasps.R
 import com.pds.chambitasps.util.LocationService
 import kotlinx.android.synthetic.main.fragment_home.view.*
@@ -40,6 +42,26 @@ class HomeFragment : Fragment() {
         val nav = Navigation.createNavigateOnClickListener(R.id.action_nav_home_to_pedirservicioFragment)
         root.btnBusquedaHome.setOnClickListener {
             nav.onClick(it)
+//            val bottomSheetDialog = BottomSheetDialog(
+//                requireContext(), R.style.BottomSheetDialogTheme
+//            )
+//            val bottomSheetView: View = LayoutInflater.from(context)
+//                .inflate(
+//                    R.layout.fragment_pedirservicio,
+//                    root.findViewById<View>(R.id.contenedor_solicitud2) as LinearLayout?
+//                )
+//            bottomSheetView.findViewById<View>(R.id.btnAceptarServicio).setOnClickListener {
+//                bottomSheetDialog.dismiss()
+//                //Navigation.createNavigateOnClickListener(R.id.action_pedirservicioFragment_to_aceptacionservicioFragment)
+//
+////                val nav = Navigation.createNavigateOnClickListener(R.id.action_pedirservicioFragment_to_aceptacionservicioFragment)
+////                nav.onClick(it)
+//            }
+//            bottomSheetView.findViewById<View>(R.id.btnCancelarServicio).setOnClickListener {
+//                bottomSheetDialog.dismiss()
+//            }
+//            bottomSheetDialog.setContentView(bottomSheetView)
+//            bottomSheetDialog.show()
         }
 
         return root

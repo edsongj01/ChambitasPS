@@ -9,7 +9,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Inicio</string>
-    <string name="menu_gallery">Mis servicios solicitados</string>
+    <string name="menu_gallery">Mis servicios realizados</string>
     <string name="menu_slideshow">Configuracion</string>
     <string name="menu_acercade">Acerca de Chambitas</string>
     <string name="menu_config">Configuracion</string>
