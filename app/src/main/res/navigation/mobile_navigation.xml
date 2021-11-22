@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.pds.chambitasps.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_pedirservicioFragment"
+            app:destination="@id/pedirservicioFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_serviciossolicitados"
+        android:name="com.pds.chambitasps.ui.serviciossolicitados.ServiciossolicitadosFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_serviciossolicitados" />
+
+    <fragment
+        android:id="@+id/nav_configuracion"
+        android:name="com.pds.chambitasps.ui.configuracion.ConfiguracionFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_configuracion" >
+        <action
+            android:id="@+id/action_nav_configuracion_to_cambiocontraFragment"
+            app:destination="@id/cambiocontraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_acercade"
+        android:name="com.pds.chambitasps.ui.acercade.AcercaDeFragment"
+        android:label="@string/menu_acercade"
+        tools:layout="@layout/fragment_acerca_de" />
+    <fragment
+        android:id="@+id/cambiocontraFragment"
+        android:name="com.pds.chambitasps.ui.configuracion.CambiocontraFragment"
+        android:label="fragment_cambiocontra"
+        tools:layout="@layout/fragment_cambiocontra" >
+        <action
+            android:id="@+id/action_cambiocontraFragment_to_nav_configuracion"
+            app:destination="@id/nav_configuracion" />
+    </fragment>
+    <fragment
+        android:id="@+id/pedirservicioFragment"
+        android:name="com.pds.chambitasps.body.PedirservicioFragment"
+        android:label="fragment_pedirservicio"
+        tools:layout="@layout/fragment_pedirservicio" >
+        <action
+            android:id="@+id/action_pedirservicioFragment_to_confirmarservicioFragment"
+            app:destination="@id/confirmarservicioFragment" />
+        <action
+            android:id="@+id/action_pedirservicioFragment_to_elegirdestinoFragment"
+            app:destination="@id/elegirdestinoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/elegirdestinoFragment"
+        android:name="com.pds.chambitasps.body.ElegirdestinoFragment"
+        android:label="fragment_elegirdestino"
+        tools:layout="@layout/fragment_elegirdestino" >
+        <action
+            android:id="@+id/action_elegirdestinoFragment_to_pedirservicioFragment"
+            app:destination="@id/pedirservicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmarservicioFragment"
+        android:name="com.pds.chambitasps.body.ConfirmarservicioFragment"
+        android:label="fragment_confirmarservicio"
+        tools:layout="@layout/fragment_confirmarservicio" >
+        <action
+            android:id="@+id/action_confirmarservicioFragment_to_aceptacionservicioFragment"
+            app:destination="@id/aceptacionservicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aceptacionservicioFragment"
+        android:name="com.pds.chambitasps.body.AceptacionservicioFragment"
+        android:label="fragment_aceptacionservicio"
+        tools:layout="@layout/fragment_aceptacionservicio" >
+        <action
+            android:id="@+id/action_aceptacionservicioFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_aceptacionservicioFragment_to_finalizarservicioFragment"
+            app:destination="@id/finalizarservicioFragment" />
+        <action
+            android:id="@+id/action_aceptacionservicioFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.pds.chambitasps.body.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_aceptacionservicioFragment"
+            app:destination="@id/aceptacionservicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalizarservicioFragment"
+        android:name="com.pds.chambitasps.body.FinalizarservicioFragment"
+        android:label="fragment_finalizarservicio"
+        tools:layout="@layout/fragment_finalizarservicio" >
+        <action
+            android:id="@+id/action_finalizarservicioFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/cerrarsesionFragment"
+        android:name="com.pds.chambitasps.CerrarsesionFragment"
+        android:label="fragment_cerrarsesion"
+        tools:layout="@layout/fragment_cerrarsesion" />
+</navigation>

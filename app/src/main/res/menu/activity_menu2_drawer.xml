@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_inicio_foreground"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_serviciossolicitados"
+            android:icon="@drawable/ic_servsoli_foreground"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_configuracion"
+            android:icon="@drawable/ic_config_foreground"
+            android:title="@string/menu_slideshow" />
+
+        <item
+            android:id="@+id/nav_acercade"
+            android:icon="@drawable/ic_acerca_foreground"
+            android:title="@string/menu_acercade" />
+
+        <item
+            android:id="@+id/cerrarsesionFragment"
+            android:icon="@drawable/ic_cerrar_foreground"
+            android:title="Cerrar sesion" />
+    </group>
+</menu>
