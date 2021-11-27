@@ -24,7 +24,6 @@ class CerrarsesionFragment : Fragment() {
     }
 
     private fun cerrarsesion() {
-        Toast.makeText(context,"Adios prro ", Toast.LENGTH_LONG).show()
 
         Handler().postDelayed(Runnable{
             val intent = Intent (getActivity(), MainActivity::class.java)

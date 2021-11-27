@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_nav_home_to_pedirservicioFragment"
             app:destination="@id/pedirservicioFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_aceptacionservicioFragment"
+            app:destination="@id/aceptacionservicioFragment" />
     </fragment>
 
     <fragment

@@ -4,22 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/contenedor_solicitud2"
     android:layout_width="355dp"
-    android:layout_height="370dp"
+    android:layout_height="700dp"
     android:layout_gravity="bottom|center"
     android:layout_marginBottom="30dp"
     android:background="@drawable/shapewhite">
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Alguien necesita tu ayuda para una chambita !!"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/shapebotontext"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:id="@+id/imageView17"
@@ -62,9 +75,11 @@
         android:id="@+id/constraintLayout3"
         android:layout_width="30dp"
         android:layout_height="32dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/shapebotontext3"
+        app:layout_constraintBottom_toTopOf="@+id/btnAceptarServicio"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView42">
 
@@ -83,7 +98,7 @@
         android:id="@+id/constraintLayout4"
         android:layout_width="30dp"
         android:layout_height="32dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/shapebotontext3"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,12 +120,10 @@
         android:layout_width="293dp"
         android:layout_height="32dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
         android:background="@drawable/shapebotontext2"
         android:text="CARPINTERO"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
 
@@ -119,14 +132,15 @@
         android:layout_width="293dp"
         android:layout_height="32dp"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/shapebotontext2"
         android:text="Casa del usuario"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnAceptarServicio"
         app:layout_constraintStart_toEndOf="@+id/constraintLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+        app:layout_constraintTop_toBottomOf="@+id/textView42"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnAceptarServicio"

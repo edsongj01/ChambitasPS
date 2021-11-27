@@ -1,12 +1,16 @@
 package com.pds.chambitasps.ui.home
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
+import androidx.fragment.app.replace
 import androidx.navigation.Navigation
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -15,13 +19,18 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.pds.chambitasps.MainActivity
 import com.pds.chambitasps.R
+import com.pds.chambitasps.body.AceptacionservicioFragment
+import com.pds.chambitasps.body.PedirservicioFragment
 import com.pds.chambitasps.util.LocationService
+import kotlinx.android.synthetic.main.fragment_aceptacionservicio.*
+import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.view.*
+import kotlinx.android.synthetic.main.fragment_pedirservicio.*
+import kotlinx.android.synthetic.main.fragment_pedirservicio.contenedor_solicitud2
 
 class HomeFragment : Fragment() {
-
-    private lateinit var mMap: GoogleMap
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -30,39 +39,25 @@ class HomeFragment : Fragment() {
     ): View? {
         val root = inflater.inflate(R.layout.fragment_home, container, false)
 
-        root.btnCentrarUbi.setOnClickListener {
-
-            val punto = LatLng(LocationService.loc.latitude, LocationService.loc.longitude)
-            mMap.addMarker(MarkerOptions().position(punto).title("Yo"))
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(punto))
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(punto,16.0f))
-            println("ENTRO")
-        }
-
         val nav = Navigation.createNavigateOnClickListener(R.id.action_nav_home_to_pedirservicioFragment)
-        root.btnBusquedaHome.setOnClickListener {
+        root.btnCentrarUbi.setOnClickListener {
             nav.onClick(it)
-//            val bottomSheetDialog = BottomSheetDialog(
-//                requireContext(), R.style.BottomSheetDialogTheme
-//            )
-//            val bottomSheetView: View = LayoutInflater.from(context)
-//                .inflate(
-//                    R.layout.fragment_pedirservicio,
-//                    root.findViewById<View>(R.id.contenedor_solicitud2) as LinearLayout?
-//                )
-//            bottomSheetView.findViewById<View>(R.id.btnAceptarServicio).setOnClickListener {
-//                bottomSheetDialog.dismiss()
-//                //Navigation.createNavigateOnClickListener(R.id.action_pedirservicioFragment_to_aceptacionservicioFragment)
-//
-////                val nav = Navigation.createNavigateOnClickListener(R.id.action_pedirservicioFragment_to_aceptacionservicioFragment)
-////                nav.onClick(it)
-//            }
-//            bottomSheetView.findViewById<View>(R.id.btnCancelarServicio).setOnClickListener {
-//                bottomSheetDialog.dismiss()
-//            }
-//            bottomSheetDialog.setContentView(bottomSheetView)
-//            bottomSheetDialog.show()
         }
+
+        val bottomSheetDialog = BottomSheetDialog(
+            requireContext(), R.style.BottomSheetDialogTheme
+        )
+        val bottomSheetView: View = LayoutInflater.from(context)
+            .inflate(
+                R.layout.dialog_bienvenido,
+                root.findViewById<View>(R.id.dialog_bienvenido) as LinearLayout?
+            )
+        bottomSheetView.findViewById<View>(R.id.btngracias).setOnClickListener {
+            bottomSheetDialog.dismiss()
+        }
+        bottomSheetDialog.setContentView(bottomSheetView)
+        bottomSheetDialog.show()
+
 
         return root
     }
