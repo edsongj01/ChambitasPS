@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class CerrarsesionFragment : Fragment() {
 
@@ -26,6 +28,7 @@ class CerrarsesionFragment : Fragment() {
     private fun cerrarsesion() {
 
         Handler().postDelayed(Runnable{
+            Firebase.auth.signOut()
             val intent = Intent (getActivity(), MainActivity::class.java)
             getActivity()?.startActivity(intent)
         },2000)

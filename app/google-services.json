@@ -1,41 +1,78 @@
 {
   "project_info": {
-    "project_number": "989759290327",
-    "project_id": "chambitasps",
-    "storage_bucket": "chambitasps.appspot.com"
+    "project_number": "845646324074",
+    "project_id": "chambitasv2",
+    "storage_bucket": "chambitasv2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:989759290327:android:7f142f4a3407a33fb6e992",
+        "mobilesdk_app_id": "1:845646324074:android:ba79a42829e6d300e54513",
         "android_client_info": {
-          "package_name": "com.pds.chambitasps"
+          "package_name": "com.pds.chambitas"
         }
       },
       "oauth_client": [
         {
-          "client_id": "989759290327-ihf1ph97jdmc17th4uecsh0ihmpiv2ej.apps.googleusercontent.com",
+          "client_id": "845646324074-jahqgqhfc8e0dmp66ke4aibq26dp03ad.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.pds.chambitasps",
-            "certificate_hash": "16994332196628d739a93f7e5061e1c10e1b9e94"
+            "package_name": "com.pds.chambitas",
+            "certificate_hash": "d662a893c4bf0cfc004baa748754ae5d20f24a3e"
           }
         },
         {
-          "client_id": "989759290327-toqgrun1vlrk5n6gam0r9f6cldkdov8d.apps.googleusercontent.com",
+          "client_id": "845646324074-c0nsqn3qqcel3hjl0fbk6r54cccdivah.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD07M0Grk5HHhSm2s3THMKBqi59bFtaAxQ"
+          "current_key": "AIzaSyBZTaOkpi50e89J1lBZwu-pajkby1WSYGI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "989759290327-toqgrun1vlrk5n6gam0r9f6cldkdov8d.apps.googleusercontent.com",
+              "client_id": "845646324074-c0nsqn3qqcel3hjl0fbk6r54cccdivah.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845646324074:android:418db4bb822011d9e54513",
+        "android_client_info": {
+          "package_name": "com.pds.chambitasps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845646324074-tsk9honmsb0n42vumu6ll1orgq91nii6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pds.chambitasps",
+            "certificate_hash": "d662a893c4bf0cfc004baa748754ae5d20f24a3e"
+          }
+        },
+        {
+          "client_id": "845646324074-c0nsqn3qqcel3hjl0fbk6r54cccdivah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZTaOkpi50e89J1lBZwu-pajkby1WSYGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845646324074-c0nsqn3qqcel3hjl0fbk6r54cccdivah.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

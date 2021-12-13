@@ -65,7 +65,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView16"
+                    android:id="@+id/photoimage"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
                     android:layout_marginLeft="30dp"
@@ -131,17 +131,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="15dp"
-                android:text="Correo Electronico"
+                android:text="Carro"
                 android:textColor="@color/black"
                 android:textSize="25dp" />
 
             <EditText
-                android:id="@+id/etxtIngresaCorreoPer"
+                android:id="@+id/etxtIngresaCarroPer"
                 android:layout_width="290dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:backgroundTint="@color/boton"
-                android:hint="miusuario@gmail.com"
+                android:hint="Sentra"
                 android:textColor="@color/textmenu"
                 android:textColorHint="@color/textmenu"
                 android:textSize="25dp" />
@@ -154,12 +154,14 @@
                 android:layout_marginTop="15dp"
                 android:text="Cambiar mi contraseña"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="25dp"
+                android:visibility="gone"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <EditText
                     android:id="@+id/etxtIngresaContraseniaPer"
